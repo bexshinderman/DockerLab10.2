@@ -1,0 +1,7 @@
+FROM ubuntu:14.04
+RUN apt-get -q update && apt-get -yq dist-upgrade
+RUN apt-get -yq install apache2
+RUN mkdir /data
+RUN touch /data/bar
+VOLUME /data
+EXPOSE 80
