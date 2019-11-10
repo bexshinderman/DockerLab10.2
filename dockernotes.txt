@@ -1,0 +1,9 @@
+docker 
+
+sudo docker build -t="testbuild2" .
+
+make container:
+sudo docker run -dit --name container1 ubuntu /bin/bash
+
+console to container:
+sudo docker attach container1
